@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <!-- Завдання 1. Створити html файл з формою для додавання викладача. Форма повинна містити наступні поля: Повне ім’я,  -->
+    <!-- стать, дата народження, email, телефон, бажаний колір фону, країна, місто, коментар. -->
+    <h1>форма для додавання викладача</h1>
+        
+        
+            <form>
+                <label for="fullName">повне ім'я</label>
+                <input type="text" name="fullName" autocapitalize="on" required><br>
+            
+                <label for="gender">стать</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">чоловік</option>
+                    <option value="female">жінка</option>
+                    <option value="other">інше</option>
+                </select><br>
+            
+                <label for="birthDate">дата народження</label>
+                <input type="date" name="birthDate" required><br>
+            
+                <label for="email">email</label>
+                <input type="email" name="email" required><br>
+            
+                <label for="phoneNum">телефон</label>
+                <input type="tel" name="phoneNum" required><br>
+
+                <label for="backgroundCol">бажаний колір фону</label>
+                <input type="color" name="backgroundCol"><br>
+            
+                <label for="country">країна</label>
+                <input type="text" name="country" required><br>
+            
+                <label for="city">місто</label>
+                <input type="text" name="city" required><br>
+            
+                <label for="comment">коментар</label>
+                <textarea id="comment" name="story"rows="5"cols="33"></textarea><br>
+
+                <button type="submit">додати</button>
+            </form>
+</body>
+</html>
