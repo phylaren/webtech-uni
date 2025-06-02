@@ -2,15 +2,15 @@
     --primary-bg-color: #dadada;
     --secondary-bg-color: white;
     --main-button-color: #3182CE;
-    --add-button-color: rgb(144, 201, 58);
-    --remove-button-color: #EF4444;
-    --delete-button-color: #EF4444;
-    --bought-status-color: #4CAF50;
-    --not-bought-status-color: #E2E8F0;
-    --item-color: #F6AD55;
+    --add-button-color: #21ba45;
+    --remove-button-color: #db2828;
+    --delete-button-color: #db2828;
+    --bought-status-color: #21ba45;
+    --not-bought-status-color: #f2f2f2;
+    --item-color: #f2711c;
 
-    --badge-main-color: #805AD5;
-    --badge-hover-color: #6B46C1;
+    --badge-main-color: #af01da;
+    --badge-hover-color: #4d01da;
     --badge-text-color: white;
 }
 
@@ -32,7 +32,7 @@ body {
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px black;
     flex: 1;
     min-width: 380px;
     max-width: 600px;
@@ -88,7 +88,6 @@ body {
     border-bottom: 1px solid #EDF2F7;
     font-size: 16px;
 }
-
 
 .item-name {
     flex-grow: 1;
@@ -223,10 +222,10 @@ body {
 }
 
 .item-badge {
-    background-color: var(--item-color);
-    color: white;
+    background-color: var(--not-bought-status-color);
+    color: black;
     padding: 6px 12px;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
     display: inline-flex;
@@ -235,7 +234,7 @@ body {
 }
 
 .badge-quantity {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--item-color);
     border-radius: 50%;
     padding: 2px 7px;
     font-size: 12px;
@@ -304,7 +303,6 @@ body {
     padding-bottom: 8px;
     background-color: var(--badge-hover-color);
 }
-
 /* 
     - Коли розмір екрану стає меншим за 500px колонки мають статиодна під одною
     - Коли розмір збільшиться, вони маютьстати в дві колонки 
@@ -419,16 +417,16 @@ body {
     }
 
     .animated-badge .badge-content {
-        background-color: white !important; /* Білий фон для основної частини */
-        color: black !important; /* Чорний текст */
-        border-radius: 0; /* Прибираємо закруглення */
-        padding: 8px 12px; /* Коригуємо відступи */
-        border-right: 1px solid #eee; /* Роздільник між "Робота:" та ім'ям */
+        background-color: white !important; 
+        color: black !important; 
+        border-radius: 0; 
+        padding: 8px 12px;
+        border-right: 1px solid #eee; 
     }
 
-    /* Замість напису "Кошик" (BuyList) вставляємо ім'я автора */
+    
     .animated-badge .badge-content .badge-text {
-        visibility: hidden; /* Ховаємо оригінальний текст "Кошик" */
+        visibility: hidden; 
         position: relative;
     }
 
